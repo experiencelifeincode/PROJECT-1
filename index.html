@@ -30,9 +30,9 @@
   <form class="example">
     <input type="text" class="form-control" placeholder="Find camprgrounds..." title="Search for Campgrounds By Name"
       name="search">
-    <button onclick="showMap()" class="fill"><i class="fa fa-search"></i></button>
-  </form>
 
+    <button type="button" id="searchBtn"><i class="fa fa-search"></i></button>
+  </form>
 
   <!--Random Quote with Image-->
   <div class="row large-8 large-7 columns">
@@ -48,20 +48,29 @@
 
   <div id='mapDiv'></div>
 
-
   <!--Footer-->
-  <!-- <footer>Project #1 2021</footer> -->
+  <!-- <footer>
+    <small>&copy; Campground Finder App: Project 1; Contributors: Chris Whalen, Evan Mora, Jared Neisen, Kendra Wing</small>
+</footer> -->
+
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
   <script>
     $(document).foundation();
   </script>
-  <script src="./assets/script.js"> </script>
+  <script src="./assets/script.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFJN8KsV0vonVDnuMQg39pedzZxhh7rVs&callback=initMap&libraries=&v=weekly"
     async></script>
+  <script>
+    function showMap() {
+      $("#map").show();
+    }</script>
+
 
 </body>
+
+
 
 </html>

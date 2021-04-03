@@ -6,6 +6,8 @@
 
 div.callout.primary {
   background-color: #606C38;
+  align-items: center;
+  word-wrap: break-word;
 }
 
 h1.header {
@@ -24,7 +26,7 @@ h2.subheader {
 form.example {
   margin: auto;
   width: 50%;
-  padding: 10px;
+  padding:
 }
 
 /* Styling for the search field */
@@ -80,6 +82,7 @@ form.example::after {
 #map {
   height: 100%;
   width: 100%;
+  display: none;
 }
 
 .row.columns {
@@ -89,6 +92,8 @@ form.example::after {
 .blog-post {
   margin: 5px;
   padding: 25px;
+  align-content: center;
+  word-wrap: break-word;
 }
 
 /*Random Quote with Image*/
@@ -101,21 +106,19 @@ form.example::after {
   text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkblue;
   border-radius: 10px;
   box-shadow: 15px;
-  padding: 5px;
-  margin: 2px;
 }
 
 /*Resize Page*/
 
-@media only screen and (max-width: 485px) {
-  form.example {
-    margin: auto;
-    width: 30%;
-    padding: 10px;
-    flex-direction: column;
+  @media only screen and (max-width: 485px) {
+    form.example {
+      margin: auto;
+      width: 30%;
+      padding: 10px;
+      flex-direction: column;
+    }
+    form.example input[type=text] {
+      font-size: 11px;
+      -ms-word-wrap: inherit;
+    }
   }
-  form.example input[type=text] {
-    font-size: 11px;
-    -ms-word-wrap: inherit;
-  }
-}
